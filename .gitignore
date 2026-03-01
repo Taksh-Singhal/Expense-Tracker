@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+mock-server/node_modules/
+
+# Build
+dist/
+dist-ssr/
+
+# Env
+.env
+*.local
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
