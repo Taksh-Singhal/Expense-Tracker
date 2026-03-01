@@ -1,0 +1,43 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "title": "Coffee",
+      "amount": 50,
+      "category": "Food",
+      "date": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "title": "Books",
+      "amount": 500,
+      "category": "Education",
+      "date": "2023-10-05"
+    },
+    {
+      "title": "coffee",
+      "amount": 13,
+      "category": "Food",
+      "date": "2025-12-12",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@college.edu"
+    }
+  ],
+  "budgets": [
+    {
+      "category": "Food",
+      "limit": 2000,
+      "spent": 1500
+    }
+  ],
+  "predict": {
+    "predicted_category": "Food",
+    "confidence": 0.95
+  }
+}
