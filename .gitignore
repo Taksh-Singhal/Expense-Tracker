@@ -19,3 +19,7 @@ dist-ssr/
 .vscode/
 .idea/
 .DS_Store
+
+# Vite cache
+.vite/
+frontend/.vite/
