@@ -11,8 +11,8 @@ from .gpay import GPayParser
 # both match the same PDF (which should not happen for distinct providers).
 
 _REGISTRY: list[type[BaseUPIParser]] = [
-    MobiKwikParser,
     PaytmParser,
+    MobiKwikParser,
     PhonePeParser,
     GPayParser,
 ]

@@ -30,7 +30,6 @@ from sqlalchemy import Column, Float, Integer, String, create_engine
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
 from parsers import get_parser
-
 # ─────────────────────────────────────────────
 # Database
 # ─────────────────────────────────────────────
@@ -155,7 +154,8 @@ def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)):
 
     try:
         with pdfplumber.open(file.file) as pdf:
-            parser      = get_parser(pdf)          # detect provider
+            parser      = get_parser(pdf)  
+            print("Using parser:", type(parser).__name__)        # detect provider
             transactions = parser.parse(pdf)       # extract debits
     except ValueError as exc:
         # Unknown / unsupported provider
